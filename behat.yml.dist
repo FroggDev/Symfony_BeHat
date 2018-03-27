@@ -1,0 +1,26 @@
+# DEFAULT CONFIGURATION
+# =====================
+#default:
+#    suites:
+#        default:
+#            contexts:
+#                - FeatureContext:
+#                    kernel: '@kernel'
+#
+#    extensions:
+#        Behat\Symfony2Extension:
+#            kernel:
+#                bootstrap: features/bootstrap/bootstrap.php
+#                class: App\Kernel
+
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://127.0.0.1:8000
+            browser_name: chrome
+
+            goutte: ~
+            selenium2:
+                capabilities:
+                    chrome:
+                        binary: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
