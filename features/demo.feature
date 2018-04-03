@@ -13,5 +13,7 @@ Feature: Behat works
   @javascript
   Scenario: Access to documentation
     Given I am on "/"
-    When I follow "a"
+    When I wait "3"
+    And I follow "a"
     Then I should see "Create your First Page in Symfony"
+    And I wait "3"
